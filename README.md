@@ -1,68 +1,52 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Learnig React by Example
 
-## Available Scripts
+This is my attempt to learn the react template by example. My notes are included in the codes as comments for future reference.
 
-In the project directory, you can run:
+Some of the notes about core concepts are include below too.
 
-### `yarn start`
+[Demo](https://hongmei-codes.github.io/react-counters/)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+# My Notes
+## Creating a react application
+### <u>1st Way: From current directory</u>
+In the terminal, navigate to the project folder and execute the following command. The '.' indictes current folder
+```
+npx create-react-app .
+```
+### <u>2nd Way: From one directory up</u>
+In the terminal, navigate one directory up the project folder and execute the following command.
+```
+npx create-react-app example
+```
 
-### `yarn test`
+Next, start the local server to view the default react application created. To start server, execute the following command in the terminal.
+```
+npm start
+```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The React app is now created and ready for edits. The React app will reload automatically each time you save any changes.
 
-### `yarn build`
+To stop the local server, press `  ctrl + c  `.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Components
+A basic component looks like this.
+```javascript
+import React, { Component } from 'react';
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+class App extends Component {
+   state = {}
+   render() {
+    return ()
+   }
+ } 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ export default App;
+ ```
+A component inherits from the Component class in React. The new component has a property: 'state'(an object) which usually contains data. It has a render() method that returns one rendered element. The component is then exported for use by other components.
 
-### `yarn eject`
+## Deployment
+To deploy React App for free, use GitHub pages and the tutorial is [here](https://github.com/hongmei-codes/react_test_deploy/blob/master/README.md)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+---
+<small>This project is based on [Mosh's React tutorial](https://www.youtube.com/watch?v=Ke90Tje7VS0).</small>
