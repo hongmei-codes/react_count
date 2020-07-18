@@ -4,7 +4,7 @@ This is my attempt to learn the react template by example. My notes are included
 
 Some of the notes about core concepts are include below too.
 
-[Demo](https://hongmei-codes.github.io/react-counters/)
+[Demo](https://hongmei-codes.github.io/react-count/)
 
 
 # My Notes
